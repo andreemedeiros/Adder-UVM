@@ -1,10 +1,10 @@
-class full_add_test extends uvm_test;
-  `uvm_component_utils(full_add_test)
+class add_test extends uvm_test;
+  `uvm_component_utils(add_test)
  
-  full_add_env env;
-  full_adder_seq seq;
+  add_env env;
+  adder_seq seq;
  
-  function new(string name = "full_add_test",uvm_component parent =null);
+  function new(string name = "add_test",uvm_component parent =null);
     super.new(name,parent);
   endfunction 
  
