@@ -1,5 +1,5 @@
 xrun: 20.09-s003: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun	20.09-s003: Started on Mar 24, 2024 at 01:24:12 EDT
+TOOL:	xrun	20.09-s003: Started on Mar 24, 2024 at 11:33:56 EDT
 xrun
 	-Q
 	-unbuffered
@@ -52,15 +52,15 @@ xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_bits_to_string.str" of 1
 UVM_INFO @ 0: reporter [RNTST] Running test full_add_test...
                    0value of reset sum=x,c_out=x
                    0End of Always loop
-UVM_INFO full_add_test.sv(13) @ 0: uvm_test_top [] Printing full_add_test_build
-UVM_INFO full_add_env.sv(11) @ 0: uvm_test_top.env [] Printing full_add_env_build
-UVM_INFO full_adder_agent.sv(12) @ 0: uvm_test_top.env.fa_agent [] Printing full_add_agent_build
-UVM_INFO full_add_driver.sv(9) @ 0: uvm_test_top.env.fa_agent.full_drv [] Printing full_add_driver_build
-UVM_INFO full_add_driver.sv(10) @ 0: uvm_test_top.env.fa_agent.full_drv [full_add_driver]                    0
-UVM_INFO full_add_monitor.sv(13) @ 0: uvm_test_top.env.fa_agent.full_mon [] Printing full_add_monitor_build
+UVM_INFO test.sv(13) @ 0: uvm_test_top [] Printing full_add_test_build
+UVM_INFO env.sv(11) @ 0: uvm_test_top.env [] Printing full_add_env_build
+UVM_INFO agent.sv(12) @ 0: uvm_test_top.env.fa_agent [] Printing full_add_agent_build
+UVM_INFO driver.sv(9) @ 0: uvm_test_top.env.fa_agent.full_drv [] Printing full_add_driver_build
+UVM_INFO driver.sv(10) @ 0: uvm_test_top.env.fa_agent.full_drv [full_add_driver]                    0
+UVM_INFO monitor.sv(13) @ 0: uvm_test_top.env.fa_agent.full_mon [] Printing full_add_monitor_build
                    0build_mon
-UVM_INFO full_adder_agent.sv(23) @ 0: uvm_test_top.env.fa_agent [full_adder_agent] Printing connect phase of agent 
-UVM_INFO full_adder_seq.sv(12) @ 0: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+UVM_INFO agent.sv(23) @ 0: uvm_test_top.env.fa_agent [full_adder_agent] Printing connect phase of agent 
+UVM_INFO seq.sv(12) @ 0: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
 -------------------------------------------------------------------------------------------------
 Name                           Type                 Size  Value                                  
 -------------------------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ req                            full_adder_seq_item  -     @2954
 -------------------------------------------------------------------------------------------------
                    5value of reset sum=0,c_out=0
                    5End of Always loop
-UVM_INFO full_adder_seq.sv(12) @ 5: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+UVM_INFO seq.sv(12) @ 5: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
 -------------------------------------------------------------------------------------------------
 Name                           Type                 Size  Value                                  
 -------------------------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ req                            full_adder_seq_item  -     @2955
 -------------------------------------------------------------------------------------------------
                   15value of sum and multiflication sum=0,c_out=0
                   15End of Always loop
-UVM_INFO full_adder_seq.sv(12) @ 15: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+UVM_INFO seq.sv(12) @ 15: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
 -------------------------------------------------------------------------------------------------
 Name                           Type                 Size  Value                                  
 -------------------------------------------------------------------------------------------------
@@ -114,7 +114,7 @@ req                            full_adder_seq_item  -     @3028
 -------------------------------------------------------------------------------------------------
                   25value of sum and multiflication sum=0,c_out=1
                   25End of Always loop
-UVM_INFO full_adder_seq.sv(12) @ 25: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+UVM_INFO seq.sv(12) @ 25: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
 -------------------------------------------------------------------------------------------------
 Name                           Type                 Size  Value                                  
 -------------------------------------------------------------------------------------------------
@@ -132,7 +132,7 @@ req                            full_adder_seq_item  -     @2969
 -------------------------------------------------------------------------------------------------
                   35value of sum and multiflication sum=1,c_out=0
                   35End of Always loop
-UVM_INFO full_adder_seq.sv(12) @ 35: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+UVM_INFO seq.sv(12) @ 35: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
 -------------------------------------------------------------------------------------------------
 Name                           Type                 Size  Value                                  
 -------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ req                            full_adder_seq_item  -     @3030
 -------------------------------------------------------------------------------------------------
                   45value of sum and multiflication sum=0,c_out=1
                   45End of Always loop
-UVM_INFO full_adder_seq.sv(12) @ 45: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+UVM_INFO seq.sv(12) @ 45: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
 -------------------------------------------------------------------------------------------------
 Name                           Type                 Size  Value                                  
 -------------------------------------------------------------------------------------------------
@@ -188,4 +188,4 @@ UVM_FATAL :    0
 Simulation complete via $finish(1) at time 55 NS + 65
 /xcelium20.09/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
 xcelium> exit
-TOOL:	xrun	20.09-s003: Exiting on Mar 24, 2024 at 01:24:21 EDT  (total: 00:00:09)
+TOOL:	xrun	20.09-s003: Exiting on Mar 24, 2024 at 11:34:04 EDT  (total: 00:00:08)
