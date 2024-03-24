@@ -1,0 +1,191 @@
+xrun: 20.09-s003: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun	20.09-s003: Started on Mar 24, 2024 at 01:24:12 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	-uvmnocdnsextra
+	-uvmhome /xcelium20.09/tools//methodology/UVM/CDNS-1.2/sv
+	/xcelium20.09/tools//methodology/UVM/CDNS-1.2/sv/src/uvm_macros.svh
+	design.sv
+	testbench.sv
+	Top level design units:
+		uvm_pkg
+		full_add_pkg
+		tb_top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loading snapshot worklib.tb_top:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /xcelium20.09/tools/xcelium/files/xmsimrc
+xcelium> source /xcelium20.09/tools//methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO /xcelium20.09/tools//methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (20.09-s003)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_bits_to_string.str" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_bits_to_string.str' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+UVM_INFO @ 0: reporter [RNTST] Running test full_add_test...
+                   0value of reset sum=x,c_out=x
+                   0End of Always loop
+UVM_INFO full_add_test.sv(13) @ 0: uvm_test_top [] Printing full_add_test_build
+UVM_INFO full_add_env.sv(11) @ 0: uvm_test_top.env [] Printing full_add_env_build
+UVM_INFO full_adder_agent.sv(12) @ 0: uvm_test_top.env.fa_agent [] Printing full_add_agent_build
+UVM_INFO full_add_driver.sv(9) @ 0: uvm_test_top.env.fa_agent.full_drv [] Printing full_add_driver_build
+UVM_INFO full_add_driver.sv(10) @ 0: uvm_test_top.env.fa_agent.full_drv [full_add_driver]                    0
+UVM_INFO full_add_monitor.sv(13) @ 0: uvm_test_top.env.fa_agent.full_mon [] Printing full_add_monitor_build
+                   0build_mon
+UVM_INFO full_adder_agent.sv(23) @ 0: uvm_test_top.env.fa_agent [full_adder_agent] Printing connect phase of agent 
+UVM_INFO full_adder_seq.sv(12) @ 0: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+-------------------------------------------------------------------------------------------------
+Name                           Type                 Size  Value                                  
+-------------------------------------------------------------------------------------------------
+req                            full_adder_seq_item  -     @2954                                  
+  a                            integral             1     'h1                                    
+  b                            integral             1     'h1                                    
+  c_in                         integral             1     'h1                                    
+  sum                          integral             1     'h0                                    
+  c_out                        integral             1     'h0                                    
+  begin_time                   time                 64    0                                      
+  depth                        int                  32    'd2                                    
+  parent sequence (name)       string               3     seq                                    
+  parent sequence (full name)  string               39    uvm_test_top.env.fa_agent.full_sqnr.seq
+  sequencer                    string               35    uvm_test_top.env.fa_agent.full_sqnr    
+-------------------------------------------------------------------------------------------------
+                   5value of reset sum=0,c_out=0
+                   5End of Always loop
+UVM_INFO full_adder_seq.sv(12) @ 5: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+-------------------------------------------------------------------------------------------------
+Name                           Type                 Size  Value                                  
+-------------------------------------------------------------------------------------------------
+req                            full_adder_seq_item  -     @2955                                  
+  a                            integral             1     'h0                                    
+  b                            integral             1     'h1                                    
+  c_in                         integral             1     'h1                                    
+  sum                          integral             1     'h0                                    
+  c_out                        integral             1     'h0                                    
+  begin_time                   time                 64    5                                      
+  depth                        int                  32    'd2                                    
+  parent sequence (name)       string               3     seq                                    
+  parent sequence (full name)  string               39    uvm_test_top.env.fa_agent.full_sqnr.seq
+  sequencer                    string               35    uvm_test_top.env.fa_agent.full_sqnr    
+-------------------------------------------------------------------------------------------------
+                  15value of sum and multiflication sum=0,c_out=0
+                  15End of Always loop
+UVM_INFO full_adder_seq.sv(12) @ 15: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+-------------------------------------------------------------------------------------------------
+Name                           Type                 Size  Value                                  
+-------------------------------------------------------------------------------------------------
+req                            full_adder_seq_item  -     @3028                                  
+  a                            integral             1     'h0                                    
+  b                            integral             1     'h0                                    
+  c_in                         integral             1     'h1                                    
+  sum                          integral             1     'h0                                    
+  c_out                        integral             1     'h1                                    
+  begin_time                   time                 64    15                                     
+  depth                        int                  32    'd2                                    
+  parent sequence (name)       string               3     seq                                    
+  parent sequence (full name)  string               39    uvm_test_top.env.fa_agent.full_sqnr.seq
+  sequencer                    string               35    uvm_test_top.env.fa_agent.full_sqnr    
+-------------------------------------------------------------------------------------------------
+                  25value of sum and multiflication sum=0,c_out=1
+                  25End of Always loop
+UVM_INFO full_adder_seq.sv(12) @ 25: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+-------------------------------------------------------------------------------------------------
+Name                           Type                 Size  Value                                  
+-------------------------------------------------------------------------------------------------
+req                            full_adder_seq_item  -     @2969                                  
+  a                            integral             1     'h1                                    
+  b                            integral             1     'h0                                    
+  c_in                         integral             1     'h1                                    
+  sum                          integral             1     'h1                                    
+  c_out                        integral             1     'h0                                    
+  begin_time                   time                 64    25                                     
+  depth                        int                  32    'd2                                    
+  parent sequence (name)       string               3     seq                                    
+  parent sequence (full name)  string               39    uvm_test_top.env.fa_agent.full_sqnr.seq
+  sequencer                    string               35    uvm_test_top.env.fa_agent.full_sqnr    
+-------------------------------------------------------------------------------------------------
+                  35value of sum and multiflication sum=1,c_out=0
+                  35End of Always loop
+UVM_INFO full_adder_seq.sv(12) @ 35: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+-------------------------------------------------------------------------------------------------
+Name                           Type                 Size  Value                                  
+-------------------------------------------------------------------------------------------------
+req                            full_adder_seq_item  -     @3030                                  
+  a                            integral             1     'h1                                    
+  b                            integral             1     'h0                                    
+  c_in                         integral             1     'h0                                    
+  sum                          integral             1     'h0                                    
+  c_out                        integral             1     'h1                                    
+  begin_time                   time                 64    35                                     
+  depth                        int                  32    'd2                                    
+  parent sequence (name)       string               3     seq                                    
+  parent sequence (full name)  string               39    uvm_test_top.env.fa_agent.full_sqnr.seq
+  sequencer                    string               35    uvm_test_top.env.fa_agent.full_sqnr    
+-------------------------------------------------------------------------------------------------
+                  45value of sum and multiflication sum=0,c_out=1
+                  45End of Always loop
+UVM_INFO full_adder_seq.sv(12) @ 45: uvm_test_top.env.fa_agent.full_sqnr@@seq [] Printing full_adder_seq
+-------------------------------------------------------------------------------------------------
+Name                           Type                 Size  Value                                  
+-------------------------------------------------------------------------------------------------
+req                            full_adder_seq_item  -     @2995                                  
+  a                            integral             1     'h1                                    
+  b                            integral             1     'h0                                    
+  c_in                         integral             1     'h1                                    
+  sum                          integral             1     'h1                                    
+  c_out                        integral             1     'h0                                    
+  begin_time                   time                 64    45                                     
+  depth                        int                  32    'd2                                    
+  parent sequence (name)       string               3     seq                                    
+  parent sequence (full name)  string               39    uvm_test_top.env.fa_agent.full_sqnr.seq
+  sequencer                    string               35    uvm_test_top.env.fa_agent.full_sqnr    
+-------------------------------------------------------------------------------------------------
+                  55value of sum and multiflication sum=1,c_out=0
+                  55End of Always loop
+UVM_INFO /xcelium20.09/tools//methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 55: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /xcelium20.09/tools//methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 55: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   16
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[]    11
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[full_add_driver]     1
+[full_adder_agent]     1
+
+Simulation complete via $finish(1) at time 55 NS + 65
+/xcelium20.09/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+TOOL:	xrun	20.09-s003: Exiting on Mar 24, 2024 at 01:24:21 EDT  (total: 00:00:09)
