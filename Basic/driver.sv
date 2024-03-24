@@ -1,6 +1,6 @@
-class full_add_driver extends uvm_driver#(full_adder_seq_item);
-  `uvm_component_utils(full_add_driver)
-  virtual fulladder_if vif;
+class add_driver extends uvm_driver#(adder_seq_item);
+  `uvm_component_utils(add_driver)
+  virtual adder_if vif;
   function new(string name="full_add_driver",uvm_component parent);
     super.new(name,parent);
   endfunction
