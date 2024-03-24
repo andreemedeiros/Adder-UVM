@@ -1,6 +1,6 @@
-class full_add_env extends uvm_env;
-  full_adder_agent fa_agent;
-  `uvm_component_utils(full_add_env)
+class add_env extends uvm_env;
+  adder_agent fa_agent;
+  `uvm_component_utils(add_env)
   
   function new(string name = "full_add_env",uvm_component parent);
     super.new(name,parent);
