@@ -1,4 +1,4 @@
-module full_adder(a,b,c_in,clk,reset,sum,c_out);
+module adder(a,b,c_in,clk,reset,sum,c_out);
   input a;
   input b;
   input c_in;
