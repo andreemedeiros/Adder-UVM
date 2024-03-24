@@ -1,9 +1,9 @@
-class full_adder_agent extends uvm_agent;
-  full_add_driver full_drv;
-  full_add_sequencer full_sqnr;
-  full_add_monitor full_mon;
-  `uvm_component_utils(full_adder_agent)
-  function new(string name = "full_adder_agent",uvm_component parent);
+class adder_agent extends uvm_agent;
+  add_driver full_drv;
+  add_sequencer full_sqnr;
+  add_monitor full_mon;
+  `uvm_component_utils(adder_agent)
+  function new(string name = "adder_agent",uvm_component parent);
     super.new(name,parent);
   endfunction
   
