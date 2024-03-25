@@ -29,43 +29,10 @@ Licença Cadence/Xcelium.
 
 ## Simulação
 
-Para utilizar a biblioteca UVM, adicione a linha de comando no bashrc:
+Para iniciar a simulação utilize o comando:
 
 ```
-vim ~/.bashrc
-```
-
-```
-export UVMHOME="/Tools/cadence/XCELIUM2309/tools/methodology/UVM/CDNS-1.2"
-```
-
-Para iniciar a simulação utilize o comando make:
-
-```
-make
-```
-
-Para mais opções de simulação utilize o comando make help:
-
-```
-make help
-```
-
-Opções:
-```
-"Usage: make [TARGET] [VARIABLE=VALUE]"
-""
-"Targets:"
-"  sim         - Run simulation with the current configuration"
-"  clean       - Clean up the simulation artifacts"
-"  view_waves  - Open waveform viewer with the generated waveform file"
-""
-"Variables:"
-"  UVM_VERBOSITY - Set UVM verbosity level (default: UVM_LOW)"
-"  UVM_TESTNAME  - Set UVM test name to run (default: random_test)"
-"  SVSEED        - Set the seed for randomization (default: random)"
-"  GUI           - Set to 1 to enable GUI mode in simulation (default: 0)"
-"  DEBUG         - Set to 1 to enable debug flags (default: 0)"
+./run.sh
 ```
 
 ## Autor
