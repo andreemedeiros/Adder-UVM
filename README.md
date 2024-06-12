@@ -1,46 +1,45 @@
-# Ambiente básico de verificação funcional e UVM.
+# Basic verification environment using UVM.
 
-## Índice
-- [Plano de Verificação](#Plano-de-Verificação)
-- [Estrutura do ambiente UVM](#Estrutura-do-ambiente-UVM)
-- [Recursos](#Recursos)
-- [Simulação](#Simulação)
-- [Autor](#Autor)
-- [Licença](#Licença)
+## Index
+- [Verification Plan](#Plano-de-Verificação)
+- [Structure of the UVM environment](#Estrutura-do-ambiente-UVM)
+- [Resources](#Resources)
+- [Simulation](#Simulation)
+- [Author](#Author)
+- [License](#License)
 
-## Plano de Verificação
+## Verification Plan
 
 ```
-- O plano de verificação se encontra num arquivo README dentro da pasta "work".
+The Verification Plan is found in the README file within the "work" folder.
 ```
 
-## Estrutura do ambiente UVM
-Ambiente básico de um testbench UVM.
+## Structure of the UVM environment
 
 ![](png/tb.png)
 
-### Recursos:
+### Resources:
 
 ```
 UVM 1.2
 
-Licença Cadence/Xcelium.
+License Cadence/Xcelium.
 ```
 
-## Simulação
+## Simulation
 
-Para iniciar a simulação utilize o comando:
+To start the Simulation use the command:
 
 ```
 ./run.sh
 ```
 
-## Autor
+## Author
 
 * **André Medeiros** - [André Medeiros](https://github.com/andreemedeiros)
 
-Contribuição no projeto [Adder-UVM](https://github.com/andreemedeiros/Adder-UVM/graphs/contributors).
+Contribution to the project [Adder-UVM](https://github.com/andreemedeiros/Adder-UVM/graphs/contributors).
 
-## Licença
+## License
 
-Este projeto está licenciado sob a MIT License - veja a [LICENSE.md](LICENSE.md) para mais detalhes.
+This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for more details.
