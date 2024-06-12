@@ -1,50 +1,50 @@
--> Para executar o ambiente de verificação pode ser utilizado o comando "make" que executa o makefile contendo a execução de todos os arquivos.
+-> To run the verification environment, the "make" command can be used, which executes the makefile containing the execution of all files.
 
 
-*** Plano de verificação ***
+*** Verification plan ***
 
-- Introdução:
+- Introduction:
 
-	- O objetivo é verificar as funcionalidades.
+	- The objective is to verify the functionalities.
 
-- Níveis de abstração:
+- Levels of abstraction:
 
-	- O módulo será verificado como um todo, considerando suas entradas e saídas.
+	- The module will be checked as a whole, considering its inputs and outputs.
 
-- Tecnologia de Verificação:
+- Verification Technology:
 
-	- A verificação será realizada utilizando a metodologia UVM (Universal Verification Methodology) em um ambiente de verificação funcional.
+	- Verification will be carried out using the UVM methodology (Universal Verification Methodology) in a functional verification environment.
 
-- Modelo de referência a ser usado:
+- Reference model to use:
 
-	- O modelo de referência será o próprio dut.
+	- The reference model will be the dut itself.
 
-- Transações:
+- Transactions:
 
-	- As transações serão definidas pela classe transaction.
+	- Transactions will be defined by the transaction class.
 
-- Fluxograma da verificação:
+- Verification flowchart:
 
-	- Inicia-se com a criação de um testbench.
-	- Implementa-se o modelo de referência.
-	- Implementa-se o sequenciador e conecta-se à entrada do modelo de referência.
-	- Implementa-se o agente dentro do ambiente do testbench e conecta-se o driver dele ao sequenciador e o monitor dele ao modelo de referência.
-	- Implementa-se o comparador e conecta-se, de um lado, ao agente e, do outro lado, ao modelo de referência.
-	- Conecta-se o agente ao DUT (Device Under Test).
+	- It starts with the creation of a testbench.
+	- The reference model is implemented.
+	- Implement the sequencer and connect to the reference model input.
+	- The agent is implemented within the testbench environment and its driver is connected to the sequencer and its monitor to the reference model.
+	- The computer is implemented and connects, on one side, to the agent and, on the other side, to the reference model.
+	- The agent connects to the DUT (Device Under Test).
 
-- Definições dos estímulos:
+- Stimulus definitions:
 
-	- Os estímulos serão definidos pelas sequências de teste que serão enviadas ao DUT através do sequenciador.
+	- The stimuli will be defined by the test sequences that will be sent to the DUT through the sequencer.
 
-- Cobertura:
+- Coverage:
 
-	- A cobertura será monitorada pelo modelo de cobertura, que verificará se todas as partes do design foram exercitadas.
+	- Coverage will be monitored by the Coverage model, which checks whether all parts of the design have been exercised.
 
-- Plano de recursos:
+- Resources:
 
-	- Será necessária uma licença Cadence/Xcelium para a simulação.
+	- A Cadence/Xcelium license will be required for the simulation.
 
-- Referências:
+- References:
 
-	- Documentação UVM, Cadence Xcelium.
+	- UVM Documentation, Cadence Xcelium.
 
